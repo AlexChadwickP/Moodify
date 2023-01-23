@@ -8,6 +8,8 @@
 <div class="mt-16 p-6">
 	<h1 class="text-2xl font-extrabold">Dashboard</h1>
 
+	<p>{import.meta.env.DEV}</p>
+
 	<!-- Add entry -->
 	<p class="font-extrabold text-gray-500 mt-5 mb-2">Add a new entry!</p>
 	<form method="POST">

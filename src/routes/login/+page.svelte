@@ -4,7 +4,14 @@
 	let emailAddress = '';
 
 	const login = async () => {
-		await supabaseClient.auth.signInWithOtp({ email: emailAddress });
+		await supabaseClient.auth.signInWithOtp({
+			email: emailAddress,
+			options: {
+				emailRedirectTo: import.meta.env.DEV
+					? 'http://localhost:5173'
+					: 'https://moodify-seven.vercel.app/'
+			}
+		});
 	};
 </script>
 
