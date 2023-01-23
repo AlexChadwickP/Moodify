@@ -9,7 +9,7 @@
 			options: {
 				emailRedirectTo: import.meta.env.DEV
 					? 'http://localhost:5173'
-					: 'https://moodify-seven.vercel.app/'
+					: 'https://moodify-seven.vercel.app/dashboard'
 			}
 		});
 	};
